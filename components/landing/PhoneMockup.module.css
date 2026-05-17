@@ -34,33 +34,6 @@
   }
 }
 
-.haloRing {
-  background: radial-gradient(
-    circle,
-    rgba(255, 92, 207, 0.35) 0%,
-    rgba(123, 47, 255, 0.2) 45%,
-    transparent 70%
-  );
-  animation: haloPulse 4.5s ease-in-out infinite;
-  will-change: transform, opacity;
-}
-
-@keyframes haloPulse {
-  0%,
-  100% {
-    opacity: 0.5;
-    transform: scale(0.88);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-}
-
-.phoneFrame {
-  transform-style: preserve-3d;
-}
-
 .glow {
   animation: glowBreathe 4s ease-in-out infinite;
   will-change: transform, opacity;
@@ -152,7 +125,6 @@
 @media (prefers-reduced-motion: reduce) {
   .enter,
   .levitate,
-  .haloRing,
   .glow,
   .linaTyping,
   .linaMessage,
